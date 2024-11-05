@@ -1,0 +1,29 @@
+test_01normal_case (test_1login.TestLogin) ... ERROR
+
+======================================================================
+ERROR: test_01normal_case (test_1login.TestLogin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Code\1024\test\AppiumAuto\AppiumProject\common\startdriver.py", line 40, in get_driver
+    driver = webdriver.Remote(f"http://{data['ip']}:{data['port']}/wd/hub", capabs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\appium\webdriver\webdriver.py", line 273, in __init__
+    super().__init__(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 192, in __init__
+    capabilities = options.to_capabilities()
+AttributeError: 'NoneType' object has no attribute 'to_capabilities'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\1024\test\AppiumAuto\AppiumProject\common\UnittestFunc.py", line 14, in setUp
+    self.driver = self.stdri.get_driver()
+  File "D:\Code\1024\test\AppiumAuto\AppiumProject\common\startdriver.py", line 43, in get_driver
+    exit()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\_sitebuiltins.py", line 26, in __call__
+    raise SystemExit(code)
+SystemExit: None
+
+----------------------------------------------------------------------
+Ran 1 test in 0.016s
+
+FAILED (errors=1)

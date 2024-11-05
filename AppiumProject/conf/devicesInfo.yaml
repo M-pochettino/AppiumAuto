@@ -1,0 +1,13 @@
+platformName: Android #设备平台
+platformVersion: 7
+udid: 9fe5c129 #连接物理设备的唯一标识(adb devices)
+deviceName: SM_G9810
+appname: base.apk
+appPackage: com.conchbooster.accelerator
+appActivity: .MainActivity
+noReset: true
+unicodeKeyboard: true
+newCommandTimeout: 60
+automationName: uiautomator2
+ip: 127.0.0.1
+port: 4723

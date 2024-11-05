@@ -1,0 +1,39 @@
+test_01normal_case (test_1login.TestLogin) ... ERROR
+
+======================================================================
+ERROR: test_01normal_case (test_1login.TestLogin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Code\1024\test\AppiumAuto\AppiumProject\common\startdriver.py", line 35, in get_driver
+    driver = webdriver.Remote("http://%s:%s/wd/hub" % (data["ip"], data["port"]), capabs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\appium\webdriver\webdriver.py", line 273, in __init__
+    super().__init__(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 266, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\appium\webdriver\webdriver.py", line 364, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 418, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'D:\Code\1024\test\AppiumAuto\AppiumProject\data\hsqonline.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'D:\Code\1024\test\AppiumAuto\AppiumProject\data\hsqonline.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\Administrator\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Administrator\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\1024\test\AppiumAuto\AppiumProject\common\UnittestFunc.py", line 14, in setUp
+    self.driver = self.stdri.get_driver()
+  File "D:\Code\1024\test\AppiumAuto\AppiumProject\common\startdriver.py", line 38, in get_driver
+    exit()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\_sitebuiltins.py", line 26, in __call__
+    raise SystemExit(code)
+SystemExit: None
+
+----------------------------------------------------------------------
+Ran 1 test in 2.435s
+
+FAILED (errors=1)
